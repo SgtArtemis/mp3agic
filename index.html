@@ -48,25 +48,20 @@
 
 <ul>
 <li>
-<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" title="JDK">JDK</a> 5 or higher</li>
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" title="JDK">JDK</a> 6 or higher
+</li>
 <li>
-<a href="http://ant.apache.org/" title="ant">ant</a> 1.6 or higher</li>
-<li>
-<a href="http://www.junit.org/" title="junit">junit</a> 3.8.1 or higher OR <a href="http://maven.apache.org/" title="maven">maven</a>
+<a href="http://maven.apache.org/" title="maven">maven</a>
 </li>
 <li>A bash shell to run the command-line scripts (if you're on MacOS or a flavor of Unix, you're set, if you're on Windows, try <a href="http://www.cygwin.com/" title="Cygwin">Cygwin</a> or rewrite the bash scripts as bat/cmd files).</li>
-</ul><p>Settings you might need to change in ant.properties if you are using ant:</p>
-
-<ul>
-<li>junit-jar should point to junit.jar on your local system</li>
-<li>deploy-dir should point to the directory on your local system you wish to deploy to</li>
-</ul><p>Useful ant targets:</p>
-
+</ul>
+Useful maven goals:
 <ul>
 <li>clean - remove binaries, docs and temporary build files</li>
-<li>build - compiles the library and applications, runs all unit tests</li>
-<li>deploy - copies the jar and scripts to the deploy directory defined in ant.properties</li>
-<li>doc - generate the javadocs</li>
+<li>compile - compile the library</li>
+<li>test - run all unit tests</li>
+<li>package - package compiled code into a jar</li>
+
 </ul><h2>How to use it</h2>
 
 <p>Some sample code follows for performing common operations; it is not an exhaustive list of all the functionality.
